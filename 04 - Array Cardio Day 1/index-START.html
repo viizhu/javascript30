@@ -40,10 +40,18 @@
         //   }
         // });
 
-    console.table(fifteen);
+// console.table(fifteen);
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
+    function getFullNames() {
+      return inventors.map(function(name,index) {
+        item.fullName = [name.first, name.last].join(" ");
+        return name;
+      });
+    }
+
+    console.log(getFullNames);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
